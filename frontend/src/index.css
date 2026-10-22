@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111214;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d32;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3ecf8e;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(62, 207, 142, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(62, 207, 142, 0.45);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite;
+}
